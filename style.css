@@ -2916,6 +2916,229 @@ footer {
     }
 
 }
+
+ /* =========================
+    CERTIFICATES
+ ========================= */
+
+.certificates-section {
+    position: relative;
+    background: #000;
+    padding: 120px 0 130px;
+    overflow: hidden;
+}
+
+
+/* BACKGROUND TEXT */
+
+.certificates-bg-text {
+    position: absolute;
+    top: 55px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    font-size: 100px;
+    line-height: 1;
+
+    font-weight: 900;
+    letter-spacing: -5px;
+
+    color: #151515;
+
+    white-space: nowrap;
+
+    user-select: none;
+    pointer-events: none;
+}
+
+
+/* HEADING */
+
+.certificates-heading {
+    position: relative;
+    z-index: 2;
+
+    text-align: center;
+
+    max-width: 800px;
+
+    margin: 0 auto 75px;
+}
+
+.certificates-heading h2 {
+    position: relative;
+
+    font-size: 62px;
+    line-height: 1;
+
+    font-weight: 800;
+
+    letter-spacing: -3px;
+
+    color: #fff;
+
+    margin: 0 0 25px;
+}
+
+.certificates-heading h2 span {
+    color: #ffbd2e;
+}
+
+.certificates-heading p {
+    color: #8d8d8d;
+
+    font-size: 17px;
+    line-height: 1.7;
+
+    max-width: 700px;
+
+    margin: 0 auto;
+}
+
+
+/* CERTIFICATE GRID */
+
+.certificates-grid {
+    position: relative;
+    z-index: 2;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 45px 35px;
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+}
+
+
+/* CARD */
+
+.certificate-card {
+    background: #0d0d0d;
+
+    border: 1px solid #181818;
+
+    padding: 18px;
+
+    transition: all 0.3s ease;
+}
+
+.certificate-card:hover {
+    transform: translateY(-8px);
+
+    border-color: #ffbd2e;
+}
+
+
+/* IMAGE */
+
+.certificate-image {
+    width: 100%;
+
+    height: 300px;
+
+    background: #111;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+.certificate-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    display: block;
+
+    transition: transform 0.4s ease;
+}
+
+.certificate-card:hover .certificate-image img {
+    transform: scale(1.03);
+}
+
+
+/* INFORMATION */
+
+.certificate-info {
+    padding: 22px 5px 5px;
+}
+
+.certificate-date {
+    display: block;
+
+    color: #ffbd2e;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    margin-bottom: 10px;
+}
+
+.certificate-info h3 {
+    color: #fff;
+
+    font-size: 21px;
+
+    line-height: 1.35;
+
+    font-weight: 700;
+
+    margin: 0 0 8px;
+}
+
+.certificate-info p {
+    color: #8d8d8d;
+
+    font-size: 15px;
+
+    margin: 0;
+}
+
+
+/* =========================
+   RESPONSIVE
+ ========================= */
+
+@media (max-width: 750px) {
+
+    .certificates-section {
+        padding: 90px 0;
+    }
+
+    .certificates-heading h2 {
+        font-size: 46px;
+    }
+
+    .certificates-bg-text {
+        font-size: 65px;
+    }
+
+    .certificates-grid {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+    .certificate-image {
+        height: 250px;
+    }
+
+}
+
+
 /* =========================================
    CONTACT SECTION - NEW DESIGN
 ========================================= */
@@ -3293,4 +3516,46 @@ footer {
         flex-wrap: wrap;
     }
 
+}
+
+/* =========================
+   ABOUT RESUME BUTTON
+========================= */
+
+.about-resume {
+    margin-top: 35px;
+}
+
+.resume-about-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 14px 25px;
+
+    background: #ffbd2e;
+    color: #000;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    border: 1px solid #ffbd2e;
+
+    transition: all 0.3s ease;
+}
+
+.resume-about-btn i {
+    font-size: 13px;
+    transition: transform 0.3s ease;
+}
+
+.resume-about-btn:hover {
+    background: transparent;
+    color: #ffbd2e;
+}
+
+.resume-about-btn:hover i {
+    transform: translateX(5px);
 }
